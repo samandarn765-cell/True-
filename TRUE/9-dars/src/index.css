@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+}
+
+.btn-blue {
+  background-color: #00ADEF;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
+}
+
+.btn-blue:hover {
+  background-color: #0099d4;
+}
+
+.btn-outline {
+  border: 2px solid #00ADEF;
+  color: #00ADEF;
+  padding: 10px 24px;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background: #00ADEF;
+  color: white;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+/* Carousel */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,173,239,0.8);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn-left { left: 10px; }
+.carousel-btn-right { right: 10px; }
+
+/* Form styles */
+.form-input {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-input:focus {
+  border-color: #00ADEF;
+}
+
+.form-label {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 4px;
+  font-weight: 500;
+}

@@ -1,0 +1,147 @@
+.prem-hero {
+  background: linear-gradient(135deg, #00AEEF, #0077B6);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.prem-hero h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.prem-hero p {
+  color: rgba(255,255,255,0.85);
+  font-size: 18px;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.advantage-card {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.advantage-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,174,239,0.15);
+}
+
+.adv-content {
+  padding: 20px;
+}
+
+.adv-content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.adv-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.prem-banner {
+  background: #00AEEF;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.prem-banner h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.prem-stats {
+  background: #1a1a1a;
+  padding: 60px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #00AEEF;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  color: #aaa;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.prem-cta {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  padding: 60px 0;
+}
+
+.prem-cta h2 {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.cta-form {
+  display: flex;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.cta-form input {
+  flex: 1;
+  min-width: 160px;
+  padding: 14px 18px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  transition: border-color 0.2s;
+}
+
+.cta-form input::placeholder { color: rgba(255,255,255,0.5); }
+.cta-form input:focus { border-bottom-color: #00AEEF; }
+.cta-form .btn-blue { padding: 14px 32px; }
+
+@media (max-width: 900px) {
+  .advantages-grid { grid-template-columns: 1fr 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+}
+
+@media (max-width: 600px) {
+  .advantages-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .cta-form { flex-direction: column; }
+  .prem-hero h1 { font-size: 24px; }
+}
